@@ -22,7 +22,7 @@ cn.Open _
 strSQL = "SELECT o.OrderId, o.OrderDateTime, o.AmountDue, o.SubTotal,"  & _
   "p.OrderPaymentID, p.PaymentDateTime, " & _
   "p.PaymentMethod, " & _
-  "Switch(p.PaymentMethod=""1"",""CASH"",p.PaymentMethod=""3"",""VISA"",p.PaymentMethod=""4"",""MASTERCARD"",p.PaymentMethod=""5"",""AMEX"",p.PaymentMethod=""6"",""CC-DISCOVER"",True,""?"") AS PaymentMethodName, " & _
+  "Switch(p.PaymentMethod=""1"",""CASH"",p.PaymentMethod=""3"",""VISA"",p.PaymentMethod=""4"",""MASTERCARD"",p.PaymentMethod=""5"",""AMEX"",p.PaymentMethod=""6"",""DISCOVER"",True,""?"") AS PaymentMethodName, " & _
   "p.AmountTendered, p.AmountPaid, p.EDCTransID," & _
   "t.MenuItemId, t.ExtendedPrice," & _
   "i.MenuItemText," & _
